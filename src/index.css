@@ -1,0 +1,458 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*  navbar css */
+
+.navbar {
+  background-color: #2c3e50;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999999;
+}
+.navbar-light .navbar-nav .nav-link:focus {
+  color: #fff;
+}
+.navbar-light .navbar-toggler {
+  color: transparent;
+  border-color: transparent;
+}
+
+.menuBtn {
+  background-color: #1abc9c;
+  padding: 0.8rem;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 500;
+  border-color: #1abc9c;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.nav-item {
+  margin-bottom: 0px;
+  margin-right: 20px;
+}
+.menuBtn p i {
+  font-size: 13px;
+}
+.svg-inline--fa {
+  font-size: 15px;
+}
+.startreact {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.startreact:hover {
+  color: #fff;
+}
+.startreact:focus {
+  color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 7px 14px;
+  border-radius: 5px;
+  display: inline-block;
+}
+.navbar-light .navbar-nav .nav-link:focus{
+  background-color: #1abc9c;
+  
+}
+.navbar-light .navbar-nav .nav-link:hover{
+  color: #fff;
+}
+
+
+@media screen and (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1100px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .nav-link {
+    padding: 0;
+  }
+  .startreact {
+    font-size: 25px;
+  }
+  .navbar {
+    padding: 10px 0;
+  }
+  .nav-item {
+    margin-bottom: 25px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .nav-item {
+    margin-bottom: 25px;
+  }
+  .navbar-nav {
+    margin-top: 15px;
+  }
+}
+
+/* ************************************************************************************************************************ */
+
+/* home css */
+
+.start {
+  background-color: #1abc9c;
+  /* padding: 70px 0; */
+  padding-top: 100px;
+  height: 100vh;
+}
+.start img {
+  width: 100%;
+  max-width: 220px;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.title {
+  color: #fff;
+  font-weight: bold;
+  font-size: 55px;
+}
+.star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.star .line1 {
+  width: 120px;
+  height: 4px;
+  background-color: #fff;
+  margin-right: 10px;
+}
+.star .fa-star {
+  color: #fff;
+  font-size: 30px;
+}
+.star .line2 {
+  width: 120px;
+  height: 4px;
+  background-color: #fff;
+  margin-left: 10px;
+}
+.start p {
+  color: #fff;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 45px;
+  }
+  .start p {
+    font-size: 25px;
+  }
+}
+
+/* ************************************************************************************************************************ */
+
+/* portfolio css */
+
+.portfolio {
+  background-color: #ffffff;
+  padding: 50px 0;
+  margin-top: 70px;
+}
+.portfolio h1,
+.portfolio .fa-star,
+.contact .fa-star , .mymodal .fa-star  {
+  color: #2c3e50;
+}
+.portfolio .star .line1,
+.portfolio .star .line2,
+.contact .star .line1,
+.contact .star .line2 , .mymodal .star .line2 , .mymodal .star .line1  {
+  background-color: #2c3e50;
+}
+.portfolio img {
+  width: 100%;
+  border-radius: 8px;
+  transition: all ease-out 0.3s;
+}
+.imgItem {
+  position: relative;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(26, 188, 156, 0.9);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  transition: all ease 0.3s;
+  opacity: 0;
+}
+.overlay .svg-inline--fa {
+  font-size: 90px;
+  color: #fff;
+  font-weight: 900;
+}
+.imgItem:hover .overlay {
+  visibility: visible;
+  opacity: 1;
+}
+.mymodal {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999999;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.modal-box {
+  width: 50%;
+  margin: auto;
+  background-color: #fff;
+  position: relative;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: black;
+  cursor: pointer;
+}
+.close .svg-inline--fa {
+  font-size: 35px;
+  color: #1abc9c;
+  font-weight: 800;
+}
+.mymodal{
+  overflow: auto;
+  padding-top: 30px;
+}
+
+#modalTitle{
+  font-size: 40px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: black;
+  margin-top: 30px;
+text-transform: uppercase;
+}
+.closewindow{
+  padding: 8px 15px ;
+  background-color: #1abc9c;
+  color: #fff;
+  font-size: 18px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@media screen and (max-width:768px) {
+  .modal-box{
+    width: 85%;
+  }
+  .g-5, .gx-5{
+    --bs-gutter-x : 1rem;
+  }
+  
+}
+/* ************************************************************************************************************************ */
+
+/* About css */
+
+.about {
+  background-color: #1abc9c;
+  width: 100%;
+  margin: 170px 0 90px 0;
+  padding: 50px 0;
+}
+.about-text p {
+  color: #fff;
+  text-align: left;
+  font-size: 20px;
+  width: 90%;
+}
+.about-text {
+  margin-bottom: 50px;
+}
+.about a {
+  color: #fff;
+  font-size: 20px;
+  border: #fff 2px solid;
+  padding: 17px 25px;
+  border-radius: 8px;
+  transition: all ease-out 0.2s;
+}
+.about a:hover {
+  background-color: #fff;
+  color: #000;
+}
+@media screen and (max-width:768px) {
+  .about-text p{
+    text-align: center;
+  }
+  .about-text p:first-child{
+    margin-bottom: 20px;
+  }
+  
+}
+
+/* ************************************************************************************************************************ */
+
+/* contact css */
+
+.contact {
+  background-color: #ffffff;
+  /* padding: 70px 0 100px 0; */
+  margin: 140px 0 80px 0;
+}
+.contact .star {
+  margin-bottom: 70px;
+}
+.contact .title {
+  color: #2c3e50;
+  font-size: 40px;
+}
+#name,
+#email,
+#number,
+#message {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgb(201, 194, 194);
+  padding: 15px 10px;
+  font-size: 23px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+#name:focus,
+#email:focus,
+#number:focus,
+#message:focus {
+  outline: none;
+  border-bottom: 1px solid rgb(201, 194, 194);
+}
+#message {
+  height: 145px;
+}
+#submit {
+  color: #fff;
+  padding: 9px 30px;
+  border-radius: 4px;
+  background-color: #1abc9c;
+  border: #1abc9c 1px solid;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact .container,
+  .contact .container-fluid,
+  .contact .container-lg,
+  .contact .container-md,
+  .contact .container-sm,
+  .contact .container-xl,
+  .contact .container-xxl {
+    max-width: 800px;
+  }
+}
+
+/* ************************************************************************************************************************ */
+
+/* footer css */
+
+footer {
+  background-color: #2c3e50;
+  padding: 60px 0;
+}
+footer h2 {
+  color: #fff;
+  font-size: 25px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+footer h4,
+footer h5 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+}
+footer h5 {
+  margin-bottom: 50px;
+}
+footer .social {
+  margin-top: 52px;
+}
+footer .social a {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -20px;
+  margin-bottom: 30px;
+  transition: all ease-out 0.3s;
+}
+footer .social a:nth-of-type(2) {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+footer .social a:hover {
+  background-color: #fff;
+}
+footer .social a:hover .brand {
+  color: #000;
+}
+footer .social a:nth-of-type(3) {
+  margin-right: 20px;
+}
+footer .social a .brand {
+  color: #fff;
+  font-size: 20px;
+}
+footer p:last-of-type {
+  color: #fff;
+  font-size: 20px;
+}
+footer .fa-heart {
+  color: red;
+}
+footer a:last-of-type {
+  color: #45e2c3;
+}
+.black-one {
+  text-align: center;
+  background-color: #1a252f;
+  color: #fff;
+  padding: 27px 0;
+  font-size: 13px;
+}
